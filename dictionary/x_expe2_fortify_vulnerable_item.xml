@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="sn_vul_vulnerable_item" max_length="40" name="x_expe2_fortify_vulnerable_item" type="collection">
+        <element label="Analysis" max_length="100" name="analysis" type="string"/>
+        <element label="Analyzer" max_length="40" name="analyzer" type="string"/>
+        <element label="Audit Date" max_length="40" name="audit_date" type="glide_date_time"/>
+        <element label="Category" max_length="500" name="category" type="string"/>
+        <element label="Confidence" max_length="40" name="confidence" type="float"/>
+        <element label="Engine Type" max_length="40" name="engine_type" type="string"/>
+        <element label="Filename" max_length="1000" name="filename" type="string"/>
+        <element choice="3" default="UPDATED" label="Fortify Status" max_length="40" name="forfity_status" type="string">
+            <choice>
+                <element label="UPDATED" sequence="10" value="UPDATED"/>
+                <element label="REMOVED" sequence="20" value="REMOVED"/>
+            </choice>
+        </element>
+        <element label="Fortify ID" mandatory="true" max_length="100" name="fortify_id" read_only="true" type="string"/>
+        <element label="Fortify Impact" max_length="40" name="fortify_impact" type="float"/>
+        <element label="Fortify Vulnerability" max_length="32" name="fortify_vulnerability" reference="x_expe2_fortify_fortify_vulnerable_entry" type="reference"/>
+        <element label="Found Date" max_length="40" name="found_date" type="glide_date_time"/>
+        <element label="GUID" max_length="100" name="guid" read_only="true" type="string"/>
+        <element label="Hidden" max_length="40" name="hidden" type="boolean"/>
+        <element label="Issue Instance ID" max_length="40" name="issue_instance_id" read_only="true" type="string"/>
+        <element label="Kingdom" max_length="150" name="kingdom" type="string"/>
+        <element label="LastScanID" max_length="40" name="lastscanid" type="string"/>
+        <element label="Likelihood" max_length="40" name="likelihood" type="float"/>
+        <element label="Line Number" max_length="40" name="line_number" type="string"/>
+        <element label="Project" max_length="32" name="project" reference="x_expe2_fortify_fortify_projects" type="reference"/>
+        <element label="Project Version" max_length="32" name="project_version" reference="x_expe2_fortify_fortify_versions" type="reference"/>
+        <element label="Removed Date" max_length="40" name="removed_date" type="glide_date_time"/>
+        <element label="ScanDate" max_length="40" name="scandate" type="glide_date_time"/>
+        <element label="Severity" max_length="40" name="severity" type="float"/>
+        <element label="Suppressed" max_length="40" name="suppressed" type="boolean"/>
+        <index name="index">
+            <element name="fortify_vulnerability"/>
+        </index>
+        <index name="index2">
+            <element name="fortify_id"/>
+        </index>
+        <index name="index3">
+            <element name="project"/>
+        </index>
+        <index name="index4">
+            <element name="project_version"/>
+        </index>
+        <index name="index5">
+            <element name="issue_instance_id"/>
+        </index>
+    </element>
+</database>
