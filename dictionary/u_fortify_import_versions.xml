@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Fortify import Versions" max_length="40" name="u_fortify_import_versions" type="collection">
+        <element attributes="import_attribute_name=Active,edge_encryption_enabled=true" label="Active" max_length="2147483647" name="u_active" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Created_By" max_length="40" name="u_created_by" type="string"/>
+        <element attributes="import_attribute_name=Created_By_,edge_encryption_enabled=true" label="Created_By_" max_length="2147483647" name="u_created_by_" type="string"/>
+        <element attributes="import_attribute_name=Creation_Date,edge_encryption_enabled=true" label="Creation_Date" max_length="2147483647" name="u_creation_date" type="string"/>
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="2147483647" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=Last_Upload_Date,edge_encryption_enabled=true" label="Last_Upload_Date" max_length="2147483647" name="u_last_upload_date" type="string"/>
+        <element attributes="import_attribute_name=Owner,edge_encryption_enabled=true" label="Owner" max_length="2147483647" name="u_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project_ID" max_length="40" name="u_project_id" type="string"/>
+        <element attributes="import_attribute_name=Project_ID_,edge_encryption_enabled=true" label="Project_ID_" max_length="2147483647" name="u_project_id_" type="string"/>
+        <element attributes="import_attribute_name=Project_Version_ID,edge_encryption_enabled=true" label="Project_Version_ID" max_length="100" name="u_project_version_id" type="string"/>
+        <element attributes="import_attribute_name=Project_Version_Name,edge_encryption_enabled=true" label="Project_Version_Name" max_length="2147483647" name="u_project_version_name" type="string"/>
+        <element attributes="import_attribute_name=Server_Version,edge_encryption_enabled=true" label="Server_Version" max_length="2147483647" name="u_server_version" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Fortify - Issues" max_length="40" name="u_fortify_import_issues" type="collection">
+        <element attributes="import_attribute_name=Analysis,edge_encryption_enabled=true" label="Analysis" max_length="2147483647" name="u_analysis" type="string"/>
+        <element attributes="import_attribute_name=Analyzer,edge_encryption_enabled=true" label="Analyzer" max_length="2147483647" name="u_analyzer" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="auditTime" max_length="40" name="u_audittime" type="string"/>
+        <element attributes="import_attribute_name=Category,edge_encryption_enabled=true" label="Category" max_length="2147483647" name="u_category" type="string"/>
+        <element attributes="import_attribute_name=Confidence,edge_encryption_enabled=true" label="Confidence" max_length="2147483647" name="u_confidence" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="descGuid" max_length="40" name="u_descguid" type="string"/>
+        <element attributes="import_attribute_name=Engine_Type,edge_encryption_enabled=true" label="Engine_Type" max_length="2147483647" name="u_engine_type" type="string"/>
+        <element attributes="import_attribute_name=Filename,edge_encryption_enabled=true" label="Filename" max_length="2147483647" name="u_filename" type="string"/>
+        <element attributes="import_attribute_name=Found_Date,edge_encryption_enabled=true" label="Found_Date" max_length="2147483647" name="u_found_date" type="string"/>
+        <element attributes="import_attribute_name=Hidden,edge_encryption_enabled=true" label="Hidden" max_length="2147483647" name="u_hidden" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ID" max_length="40" name="u_id" type="string"/>
+        <element attributes="import_attribute_name=Impact,edge_encryption_enabled=true" label="Impact" max_length="2147483647" name="u_impact" type="string"/>
+        <element attributes="import_attribute_name=Issue_Abstract,edge_encryption_enabled=true" label="Issue_Abstract" max_length="2147483647" name="u_issue_abstract" type="string"/>
+        <element attributes="import_attribute_name=Issue_Detail,edge_encryption_enabled=true" label="Issue_Detail" max_length="2147483647" name="u_issue_detail" type="string"/>
+        <element attributes="import_attribute_name=Issue_Instance_ID,edge_encryption_enabled=true" label="Issue_Instance_ID" max_length="100" name="u_issue_instance_id" type="string"/>
+        <element attributes="import_attribute_name=Issue_Recommendation,edge_encryption_enabled=true" label="Issue_Recommendation" max_length="2147483647" name="u_issue_recommendation" type="string"/>
+        <element attributes="import_attribute_name=Kingdom,edge_encryption_enabled=true" label="Kingdom" max_length="2147483647" name="u_kingdom" type="string"/>
+        <element attributes="import_attribute_name=LastScanID,edge_encryption_enabled=true" label="LastScanID" max_length="2147483647" name="u_lastscanid" type="string"/>
+        <element attributes="import_attribute_name=Likelihood,edge_encryption_enabled=true" label="Likelihood" max_length="2147483647" name="u_likelihood" type="string"/>
+        <element attributes="import_attribute_name=Line__,edge_encryption_enabled=true" label="Line__" max_length="2147483647" name="u_line__" type="string"/>
+        <element attributes="import_attribute_name=Priority,edge_encryption_enabled=true" label="Priority" max_length="2147483647" name="u_priority" type="string"/>
+        <element attributes="import_attribute_name=Project_ID,edge_encryption_enabled=true" label="Project_ID" max_length="2147483647" name="u_project_id" type="string"/>
+        <element attributes="import_attribute_name=Project_Version_ID,edge_encryption_enabled=true" label="Project_Version_ID" max_length="2147483647" name="u_project_version_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="removedDate" max_length="40" name="u_removeddate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Removed_Date" max_length="40" name="u_removed_date" type="string"/>
+        <element attributes="import_attribute_name=ScanDate,edge_encryption_enabled=true" label="ScanDate" max_length="2147483647" name="u_scandate" type="string"/>
+        <element attributes="import_attribute_name=Severity,edge_encryption_enabled=true" label="Severity" max_length="2147483647" name="u_severity" type="string"/>
+        <element attributes="import_attribute_name=Status,edge_encryption_enabled=true" label="Status" max_length="2147483647" name="u_status" type="string"/>
+        <element attributes="import_attribute_name=Suppressed,edge_encryption_enabled=true" label="Suppressed" max_length="2147483647" name="u_suppressed" type="string"/>
+    </element>
+</database>

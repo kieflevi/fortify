@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Versions" max_length="40" name="x_expe2_fortify_fortify_versions" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Created By" max_length="32" name="created_by" reference="sys_user" type="reference"/>
+        <element label="Creation Date" max_length="40" name="creation_date" type="glide_date_time"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Last Upload Date" max_length="40" name="last_upload_date" type="glide_date_time"/>
+        <element display="true" label="Name" max_length="255" name="name" type="string"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element label="Project" max_length="32" name="project" reference="x_expe2_fortify_fortify_projects" type="reference"/>
+        <element attributes="format=none" label="Project Version" max_length="40" name="project_version" type="integer"/>
+        <element label="Server Version" max_length="40" name="server_version" type="string"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+        <index name="index2">
+            <element name="project"/>
+        </index>
+        <index name="index3">
+            <element name="project_version"/>
+        </index>
+        <index name="index4">
+            <element name="created_by"/>
+        </index>
+    </element>
+</database>

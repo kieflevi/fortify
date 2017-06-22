@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="removed_date" label="Removed Date" language="en" table="x_expe2_fortify_vulnerable_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>removed_date</element>
+            <help/>
+            <hint/>
+            <label>Removed Date</label>
+            <language>en</language>
+            <name>x_expe2_fortify_vulnerable_item</name>
+            <plural>Removed Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-18 23:19:10</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>7a4f98d8dbdabe44e5edf3d51d9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Removed Date</sys_name>
+            <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+            <sys_update_name>sys_documentation_x_expe2_fortify_vulnerable_item_removed_date_en</sys_update_name>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-18 23:19:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

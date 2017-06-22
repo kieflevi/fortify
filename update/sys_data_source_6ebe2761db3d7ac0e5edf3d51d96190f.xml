@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>30</connection_timeout>
+        <connection_url>jdbc:sqlserver://CHELSQLEISWI002.idxlab.expedmz.com;selectMethod=cursor;databaseName=;integratedSecurity=true</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name/>
+        <database_port/>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>com.microsoft.sqlserver.jdbc.SQLServerDriver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Fortify Projects</import_set_table_label>
+        <import_set_table_name>u_fortify_import_projects</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>MEyi3jQvb+N7MaSa+EyjGA==</jdbc_password>
+        <jdbc_server>CHELSQLEISWI002.idxlab.expedmz.com</jdbc_server>
+        <jdbc_user_name>sa</jdbc_user_name>
+        <jdbcprobe_result_set_rows/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="CHELUTLSND005-SQL">ce5c1752db7d320433dff12cbf9619b5</mid_server>
+        <name>Fortify - Projects</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>Specific SQL</query>
+        <query_timeout>600</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement>SELECT [id] AS [Project ID]&#13;
+      ,[name] AS [Project Name]&#13;
+      ,ISNULL([description], '') AS [Project Description]&#13;
+      ,[creationDate] AS [Creation Date]&#13;
+      ,[createdBy] AS [Created By]&#13;
+  FROM [ssc].[dbo].[project]&#13;
+ WHERE [id] NOT IN (15, 41, 46)</sql_statement>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>jlighthall_SN</sys_created_by>
+        <sys_created_on>2017-03-29 15:07:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6ebe2761db3d7ac0e5edf3d51d96190f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Fortify - Projects</sys_name>
+        <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+        <sys_update_name>sys_data_source_6ebe2761db3d7ac0e5edf3d51d96190f</sys_update_name>
+        <sys_updated_by>kkaryadi_SN</sys_updated_by>
+        <sys_updated_on>2017-04-20 20:49:14</sys_updated_on>
+        <table_name/>
+        <type>JDBC</type>
+        <use_integrated_authentication>true</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="u_fortify_import_versions" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_row</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>a3a82948dbc2f604e5edf3d51d9619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_set</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>2ba82948dbc2f604e5edf3d51d9619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_state</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>aba82948dbc2f604e5edf3d51d9619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_project_version_id</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>2fa82948dbc2f604e5edf3d51d9619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_active</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>afa82948dbc2f604e5edf3d51d9619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_owner</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>23a82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_description</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>a3a82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_project_version_name</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>27a82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_project_id_</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>a7a82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_creation_date</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>2ba82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_created_by_</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>aba82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_server_version</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>2fa82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_last_upload_date</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>afa82948dbc2f604e5edf3d51d9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_table</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>23a86948dbc2f604e5edf3d51d961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_sys_id</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>a3a86948dbc2f604e5edf3d51d961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_row_error</element>
+            <list_id display_value="u_fortify_import_versions" element="NULL" name="u_fortify_import_versions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6ba82948dbc2f604e5edf3d51d9619fd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_id>27a86948dbc2f604e5edf3d51d961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>u_fortify_import_versions</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-05 23:45:37</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>6ba82948dbc2f604e5edf3d51d9619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_fortify_import_versions</sys_name>
+            <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+            <sys_update_name>sys_ui_list_u_fortify_import_versions_null</sys_update_name>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-05 23:45:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

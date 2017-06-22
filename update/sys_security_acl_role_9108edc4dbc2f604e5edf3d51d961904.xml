@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>kkaryadi_SN</sys_created_by>
+        <sys_created_on>2017-04-05 23:42:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9108edc4dbc2f604e5edf3d51d961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_expe2_fortify_fortify_versions.admin_read</sys_name>
+        <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+        <sys_security_acl display_value="x_expe2_fortify_fortify_versions">d908adc4dbc2f604e5edf3d51d9619e3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9108edc4dbc2f604e5edf3d51d961904</sys_update_name>
+        <sys_updated_by>kkaryadi_SN</sys_updated_by>
+        <sys_updated_on>2017-04-05 23:42:44</sys_updated_on>
+        <sys_user_role display_value="admin_read" name="admin_read">467da6a114798a0020d585b2c29ddd45</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

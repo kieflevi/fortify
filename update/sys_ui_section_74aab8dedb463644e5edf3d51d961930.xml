@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="74aab8dedb463644e5edf3d51d961930" sys_domain="global" table="x_expe2_fortify_fortify_vulnerable_entry" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id</element>
+            <position>0</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>858eb05adb863644e5edf3d51d9619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>guid</element>
+            <position>1</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>098eb05adb863644e5edf3d51d9619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>898eb05adb863644e5edf3d51d9619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>0d8eb05adb863644e5edf3d51d9619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_abstract</element>
+            <position>4</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>8d8eb05adb863644e5edf3d51d9619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_detail</element>
+            <position>5</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>018eb05adb863644e5edf3d51d9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_recommendation</element>
+            <position>6</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>818eb05adb863644e5edf3d51d9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_references</element>
+            <position>7</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:27:44</sys_created_on>
+            <sys_id>058eb05adb863644e5edf3d51d9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:27:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_tips</element>
+            <position>8</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 21:02:01</sys_created_on>
+            <sys_id>5b56c19adbc63644e5edf3d51d961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 21:02:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>removed_date</element>
+            <position>9</position>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-18 23:18:11</sys_created_on>
+            <sys_id>a41fd898dbdabe44e5edf3d51d9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_expe2_fortify_fortify_vulnerable_entry" sys_domain="global" view="Default view">74aab8dedb463644e5edf3d51d961930</sys_ui_section>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-18 23:18:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_expe2_fortify_fortify_vulnerable_entry</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-12 20:10:46</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>74aab8dedb463644e5edf3d51d961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_expe2_fortify_fortify_vulnerable_entry</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+            <sys_update_name>sys_ui_section_74aab8dedb463644e5edf3d51d961930</sys_update_name>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-12 20:10:46</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

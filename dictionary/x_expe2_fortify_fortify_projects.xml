@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Projects" max_length="40" name="x_expe2_fortify_fortify_projects" type="collection">
+        <element label="Created By" max_length="32" name="created_by" reference="sys_user" type="reference"/>
+        <element label="Creation Date" max_length="40" name="creation_date" type="glide_date_time"/>
+        <element label="Project Description" max_length="500" name="project_description" type="string"/>
+        <element label="Project ID" max_length="40" name="project_id" type="integer"/>
+        <element display="true" label="Project Name" max_length="255" name="project_name" type="string"/>
+        <index name="index">
+            <element name="project_id"/>
+        </index>
+        <index name="index2">
+            <element name="created_by"/>
+        </index>
+    </element>
+</database>

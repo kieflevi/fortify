@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="forfity_status" table="x_expe2_fortify_vulnerable_item" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>forfity_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UPDATED</label>
+            <language>en</language>
+            <name>x_expe2_fortify_vulnerable_item</name>
+            <sequence>10</sequence>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-13 20:10:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2b34c6eedb46b644e5edf3d51d9619d1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-13 20:11:02</sys_updated_on>
+            <u_isactive>false</u_isactive>
+            <value>UPDATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>forfity_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>REMOVED</label>
+            <language>en</language>
+            <name>x_expe2_fortify_vulnerable_item</name>
+            <sequence>20</sequence>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-13 20:10:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>633446eedb46b644e5edf3d51d96196e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-13 20:11:04</sys_updated_on>
+            <u_isactive>false</u_isactive>
+            <value>REMOVED</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>forfity_status</element>
+            <name>x_expe2_fortify_vulnerable_item</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-04-13 20:10:51</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2734c6eedb46b644e5edf3d51d9619d1</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>forfity_status</sys_name>
+            <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+            <sys_update_name>sys_choice_x_expe2_fortify_vulnerable_item_forfity_status</sys_update_name>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-04-13 20:11:04</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
