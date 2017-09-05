@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-06-15 17:42:03</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d93e713adb5f36c0315ffe8d0f9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_expe2_fortify_vulnerable_item.x_expe2_fortify.Read_Only</sys_name>

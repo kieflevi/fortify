@@ -38,37 +38,54 @@
         <scp_server/>
         <scp_user_name/>
         <sheet_number>0</sheet_number>
-        <sql_statement>/*
-** Get a list of Issues REMOVED yesterday
-**
-** Do NOT include these Project IDs:
-**    15 = test
-**    41 = Open Source
-**    46 = 3rd Party
-*/
-
-SELECT [i].[id] as [ID]
-      ,[i].[issueInstanceId] AS [Issue Instance ID]
-      ,DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') AS [removedDate]
-      ,[i].[scanStatus] AS [Status]
-  FROM [ssc].[dbo].[issue]  AS [i]
- INNER JOIN [ssc].[dbo].[projectversion] AS [pv]
-         ON [i].[projectVersion_id] = [pv].[id]
- INNER JOIN [ssc].[dbo].[project] AS [p]
-         ON [pv].[project_id] = [p].[id]
- WHERE [i].[engineType] = 'SCA'
-   AND [p].[id] NOT IN (15, 41, 46)
-   AND [pv].[active] = 'Y'
-   AND (DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') &gt;= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE() - 30), 0)
-        AND DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') &lt; DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()), 0))
-   AND [i].[scanStatus] = 'REMOVED'</sql_statement>
+        <sql_statement>/*&#13;
+** Get a list of Issues REMOVED over the last 30 days&#13;
+**&#13;
+** The "OWASP Top 10 2013" GUID is 1A2B4C7E-93B0-4502-878A-9BE40D2A25C4&#13;
+**   (SELECT TOP 1000 * FROM catpackexternallist)&#13;
+**&#13;
+** Do NOT include these Project IDs:&#13;
+**    15 = test&#13;
+**    41 = Open Source&#13;
+**    46 = 3rd Party&#13;
+*/&#13;
+&#13;
+-- FIRST, create a temporary table of issues and OWASP Top 10 2013 value that were REMOVED over the last 30 days&#13;
+SELECT DISTINCT [i].[id] AS [issue_id]&#13;
+      ,[ssc].[dbo].[getExternalCategories]([i].[mappedCategory], '1A2B4C7E-93B0-4502-878A-9BE40D2A25C4') AS [owasp2013]&#13;
+  INTO [#owasp]&#13;
+  FROM [ssc].[dbo].[issue] AS [i]&#13;
+ INNER JOIN [ssc].[dbo].[projectversion] AS [pv]&#13;
+         ON [i].[projectVersion_id] = [pv].[id]&#13;
+ INNER JOIN [ssc].[dbo].[project] AS [p]&#13;
+         ON [pv].[project_id] = [p].[id]&#13;
+ WHERE [i].[engineType] = 'SCA'&#13;
+   AND [p].[id] NOT IN (15, 41, 46)&#13;
+   AND [pv].[active] = 'Y'&#13;
+   AND [i].[scanStatus] = 'REMOVED'&#13;
+   AND (DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') &gt;= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE() - 29), 0)&#13;
+        AND DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') &lt; DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE() + 1), 0))&#13;
+ ORDER BY [i].[id]&#13;
+&#13;
+-- SECOND, retrieve the issues that are OWASP Top 10 2013 related&#13;
+SELECT [i].[id] as [ID]&#13;
+      ,DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') AS [removedDate]&#13;
+      ,[i].[scanStatus] AS [Status]&#13;
+  FROM [ssc].[dbo].[issue]  AS [i]&#13;
+ INNER JOIN [#owasp] AS [o]&#13;
+         ON [i].[id] = [o].[issue_id]&#13;
+ WHERE [o].[owasp2013] IS NOT NULL&#13;
+ ORDER BY [i].[id]&#13;
+&#13;
+-- THIRD, clean up temporary tables&#13;
+DROP TABLE [#owasp]</sql_statement>
         <ssh_keyfile_path/>
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-19 22:25:31</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>be9c95acdb5a3284e5edf3d51d9619dd</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Fortify - Removed Issues</sys_name>
         <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
         <sys_policy/>
@@ -76,7 +93,7 @@ SELECT [i].[id] as [ID]
         <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
         <sys_update_name>sys_data_source_be9c95acdb5a3284e5edf3d51d9619dd</sys_update_name>
         <sys_updated_by>kkaryadi_SN</sys_updated_by>
-        <sys_updated_on>2017-06-06 05:24:02</sys_updated_on>
+        <sys_updated_on>2017-09-05 16:46:40</sys_updated_on>
         <table_name/>
         <type>JDBC</type>
         <use_integrated_authentication>true</use_integrated_authentication>

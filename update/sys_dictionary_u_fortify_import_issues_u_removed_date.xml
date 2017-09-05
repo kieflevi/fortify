@@ -47,7 +47,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-18 23:14:26</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e13e5058dbdabe44e5edf3d51d961920</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Removed_Date</sys_name>

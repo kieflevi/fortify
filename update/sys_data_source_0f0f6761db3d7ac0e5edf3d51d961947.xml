@@ -78,7 +78,7 @@ DROP TABLE [#tempArtifact]</sql_statement>
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>jlighthall_SN</sys_created_by>
         <sys_created_on>2017-03-29 15:08:18</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>0f0f6761db3d7ac0e5edf3d51d961947</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name>Fortify - Versions</sys_name>

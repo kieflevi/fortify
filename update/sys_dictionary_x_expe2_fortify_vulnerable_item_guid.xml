@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-18 03:55:03</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>80b414c8db167e44e5edf3d51d961962</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>GUID</sys_name>

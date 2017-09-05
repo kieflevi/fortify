@@ -49,7 +49,7 @@
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>jlighthall_SN</sys_created_by>
         <sys_created_on>2017-03-29 15:07:35</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6ebe2761db3d7ac0e5edf3d51d96190f</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name>Fortify - Projects</sys_name>

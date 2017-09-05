@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-06 20:27:40</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e554c614db8e3a04e5edf3d51d961934</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>LastScanID</sys_name>

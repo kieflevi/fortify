@@ -24,7 +24,7 @@
         <sys_class_name>scheduled_import_set</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-13 23:10:49</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>210d6ee6db0eb644e5edf3d51d9619b4</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Fortify Open Issues</sys_name>

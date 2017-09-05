@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-06-01 18:39:19</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ff158e9adb43b240db16f72aaf96192f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Data Source</sys_name>

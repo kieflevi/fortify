@@ -24,7 +24,7 @@
         <sys_class_name>scheduled_import_set</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-13 23:07:01</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a67c22e6db0eb644e5edf3d51d961930</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Fortify Project</sys_name>

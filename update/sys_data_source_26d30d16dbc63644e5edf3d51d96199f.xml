@@ -57,7 +57,7 @@ SELECT [d].[id] AS [ID]&#13;
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-12 20:57:38</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>26d30d16dbc63644e5edf3d51d96199f</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Fortify - Vulnerability</sys_name>

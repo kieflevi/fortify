@@ -17,7 +17,7 @@
         <sys_class_name>sys_transform_map</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-06 20:52:30</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c99aca98dbce3a04e5edf3d51d961988</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>Default Issues</sys_name>

@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-05 23:42:44</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1108edc4dbc2f604e5edf3d51d961933</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_expe2_fortify_fortify_versions.x_expe2_fortify.fortify_versions_user</sys_name>

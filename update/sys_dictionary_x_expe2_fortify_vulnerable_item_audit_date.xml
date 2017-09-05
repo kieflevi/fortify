@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-19 22:19:42</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a4fad5a8db5a3284e5edf3d51d9619ad</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Audit Date</sys_name>

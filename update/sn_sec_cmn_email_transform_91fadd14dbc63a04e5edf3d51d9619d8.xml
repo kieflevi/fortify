@@ -13,7 +13,7 @@
         <sys_class_name>sn_sec_cmn_email_transform</sys_class_name>
         <sys_created_by>jlighthall_SN</sys_created_by>
         <sys_created_on>2017-04-06 17:24:27</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>91fadd14dbc63a04e5edf3d51d9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>

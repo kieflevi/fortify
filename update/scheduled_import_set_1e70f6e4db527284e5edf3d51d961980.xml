@@ -24,7 +24,7 @@
         <sys_class_name>scheduled_import_set</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-20 04:31:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1e70f6e4db527284e5edf3d51d961980</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Fortify Audited Issues</sys_name>

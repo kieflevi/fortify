@@ -107,7 +107,7 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>kkaryadi_SN</sys_created_by>
             <sys_created_on>2017-04-06 17:53:31</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>23a16918db0a3a04e5edf3d51d9619a5</sys_id>
             <sys_mod_count>0</sys_mod_count>

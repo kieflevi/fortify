@@ -17,7 +17,7 @@
         <sys_class_name>sys_transform_map</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-26 21:03:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b2fc417edb1e3e84e5edf3d51d961996</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>audited issues</sys_name>

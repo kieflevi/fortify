@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>jdbc:sqlserver://CHELSQLEISWI002.idxlab.expedmz.com;selectMethod=cursor;databaseName=;integratedSecurity=true</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name/>
+        <database_port/>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>com.microsoft.sqlserver.jdbc.SQLServerDriver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Fortify Issues</import_set_table_label>
+        <import_set_table_name>u_fortify_import_issues</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server>CHELSQLEISWI002.idxlab.expedmz.com</jdbc_server>
+        <jdbc_user_name/>
+        <jdbcprobe_result_set_rows/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="">126316fcdb12be00c40e5f30cf96197e</mid_server>
+        <name>Fortify initial removed issues</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>Specific SQL</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement>/*
+** Get a list of all REMOVED Issues
+** (use this script only ONCE to seed the table)
+**
+** The "Analysis" GUID is 87f2364f-dcd4-49e6-861d-f8d3f351686b
+**   (SELECT TOP 1000 * FROM attr)
+**
+** The "OWASP Top 10 2013" GUID is 1A2B4C7E-93B0-4502-878A-9BE40D2A25C4
+**   (SELECT TOP 1000 * FROM catpackexternallist)
+**
+** Do NOT include these Project IDs:
+**    15 = test
+**    41 = Open Source
+**    46 = 3rd Party
+*/
+-- FIRST, create a temporary table of issues and OWASP Top 10 2013 value
+SELECT [i].[id] AS [issue_id]
+      ,[p].[id] AS [project_id]
+      ,[pv].[id] AS [projectVersion_id]
+      ,[ssc].[dbo].[getExternalCategories]([i].[mappedCategory], '1A2B4C7E-93B0-4502-878A-9BE40D2A25C4') AS [owasp2013]
+  INTO [#owasp]
+  FROM [ssc].[dbo].[issue] AS [i]
+ INNER JOIN [ssc].[dbo].[projectversion] AS [pv]
+         ON [i].[projectVersion_id] = [pv].[id]
+ INNER JOIN [ssc].[dbo].[project] AS [p]
+         ON [pv].[project_id] = [p].[id]
+ WHERE [i].[engineType] = 'SCA'
+   AND [p].[id] NOT IN (15, 41, 46)
+   AND [pv].[active] = 'Y'
+   AND [i].[scanStatus] = 'REMOVED'
+   AND (DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') &gt;= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE() - 95), 0)
+        AND DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') &lt; DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE() + 1), 0))
+ ORDER BY [i].[id]
+-- SECOND, create a temporary table of the last audit on an issue
+SELECT [issue_id] AS [issue_id]
+      ,MAX([seqNumber]) AS [seqNumber]
+  INTO [#lastAudits]
+  FROM [ssc].[dbo].[audithistoryview]
+ WHERE [attrGuid] IN ('87f2364f-dcd4-49e6-861d-f8d3f351686b', '22222222-2222-2222-2222-222222222222')
+ GROUP BY [issue_id]
+ ORDER BY [issue_id]
+-- THIRD, create a temporary table of the audit information for the last audit on an issue
+SELECT [ahv].[issue_id] AS [issue_id]
+      ,ISNULL([ahv].[newValue], 'Not Set') AS [newValue]
+      ,[ahv].[auditTime] AS [auditTime]
+  INTO [#historicalAudits]
+  FROM [ssc].[dbo].[audithistoryview] AS [ahv]
+ INNER JOIN [#lastAudits] AS [la]
+         ON [ahv].[issue_id] = [la].[issue_id]
+            AND [ahv].[seqNumber] = [la].[seqNumber]
+ ORDER BY [ahv].[issue_id]
+-- FOURTH, retrieve the issues that are OWASP Top 10 2013 related
+SELECT [i].[id] AS [ID]
+      ,[i].[issueInstanceId] AS [Issue Instance ID]
+      ,[i].[friority] AS [Priority]
+      ,[o].[project_id] AS [Project ID]
+      ,[o].[projectVersion_id] AS [Project Version ID]
+      ,[i].[fileName] AS [Filename]
+      ,[i].[lineNumber] AS [Line #]
+      ,[i].[kingdom] AS [Kingdom]
+      ,[i].[category] AS [Category]
+      ,FORMAT([i].[impact], 'N1') AS [Impact]
+      ,FORMAT(ROUND([i].[likelihood], 1), 'N1') AS [Likelihood]
+      ,ISNULL([ha].[newValue], 'Not Set') AS [Analysis]
+      ,DATEADD(SECOND, [i].[foundDate] / 1000, '1970-01-01') AS [foundDate]
+      ,DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') AS [removedDate]
+      ,DATEADD(SECOND, [ha].[auditTime] / 1000, '1970-01-01') AS [auditTime]
+      ,FORMAT(ROUND([i].[severity], 1), 'N1') AS [Severity]
+      ,FORMAT(ROUND([i].[confidence], 1), 'N1') AS [Confidence]
+      ,[i].[ruleGuid] AS [descGUID]
+      ,[i].[engineType] AS [Engine Type]
+      ,[i].[analyzer] AS [Analyzer]
+      ,[i].[hidden] AS [Hidden]
+      ,[i].[suppressed] AS [Suppressed]
+      ,[i].[scanStatus] AS [Status]
+  FROM [ssc].[dbo].[issue] AS [i]
+  LEFT JOIN [#historicalAudits] AS [ha]
+         ON [i].[id] = [ha].[issue_id]
+ INNER JOIN [#owasp] AS [o]
+         ON [i].[id] = [o].[issue_id]
+ WHERE [o].[owasp2013] IS NOT NULL
+  ORDER BY [i].[id]
+ 
+-- FIFTH, clean up temporary tables
+DROP TABLE [#owasp]
+DROP TABLE [#lastAudits]
+DROP TABLE [#historicalAudits]
+</sql_statement>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>kkaryadi_SN</sys_created_by>
+        <sys_created_on>2017-08-31 21:53:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a73953abdb388300ee3e9837db9619fa</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Fortify initial removed issues</sys_name>
+        <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+        <sys_update_name>sys_data_source_a73953abdb388300ee3e9837db9619fa</sys_update_name>
+        <sys_updated_by>kkaryadi_SN</sys_updated_by>
+        <sys_updated_on>2017-08-31 22:47:34</sys_updated_on>
+        <table_name/>
+        <type>JDBC</type>
+        <use_integrated_authentication>true</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

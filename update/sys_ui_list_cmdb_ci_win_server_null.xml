@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_win_server" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="cmdb_ci_win_server" element="NULL" name="cmdb_ci_win_server" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8b52db942b31020037f20fed59da1575</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2015-08-07 03:16:40</sys_created_on>
+            <sys_id>cb52db942b31020037f20fed59da1575</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2015-08-07 03:16:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>os</element>
+            <list_id display_value="cmdb_ci_win_server" element="NULL" name="cmdb_ci_win_server" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8b52db942b31020037f20fed59da1575</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2015-08-07 03:16:40</sys_created_on>
+            <sys_id>0f52db942b31020037f20fed59da1575</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2015-08-07 03:16:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>os_version</element>
+            <list_id display_value="cmdb_ci_win_server" element="NULL" name="cmdb_ci_win_server" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8b52db942b31020037f20fed59da1575</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2015-08-07 03:16:40</sys_created_on>
+            <sys_id>4f52db942b31020037f20fed59da1575</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2015-08-07 03:16:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_win_server</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-06-28 00:10:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>9c5a0172db6f72408e14ff431d961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_win_server</sys_name>
+            <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_win_server_null</sys_update_name>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-06-28 00:10:26</sys_updated_on>
+            <sys_user display_value="Kevin Karyadi">455ec0a52bbd1e80fc3c5ac007da1595</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

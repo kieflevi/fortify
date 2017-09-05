@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>kkaryadi_SN</sys_created_by>
             <sys_created_on>2017-04-20 00:20:12</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>fad63de8db1e3284e5edf3d51d96194e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>auditTime</sys_name>

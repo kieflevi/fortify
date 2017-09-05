@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-12 20:09:23</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>5c5a785edb463644e5edf3d51d961928</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_expe2_fortify_fortify_vulnerable_entry</sys_name>

@@ -24,7 +24,7 @@
         <sys_class_name>scheduled_import_set</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-20 04:32:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>64b0fee4db527284e5edf3d51d961906</sys_id>
         <sys_mod_count>31</sys_mod_count>
         <sys_name>Fortify Suppressed Issues</sys_name>

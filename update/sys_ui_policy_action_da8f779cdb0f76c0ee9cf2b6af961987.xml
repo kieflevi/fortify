@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-05-26 22:26:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>da8f779cdb0f76c0ee9cf2b6af961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>project.project_id</sys_name>

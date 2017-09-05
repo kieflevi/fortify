@@ -7,7 +7,7 @@
         <sys_class_name>sys_index</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-11 19:11:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a763e77ddb46b244e5edf3d51d96190d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_expe2_fortify_vulnerable_item</sys_name>

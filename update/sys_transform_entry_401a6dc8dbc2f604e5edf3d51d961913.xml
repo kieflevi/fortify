@@ -19,7 +19,7 @@
         <sys_class_name>sys_transform_entry</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-05 23:51:39</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>401a6dc8dbc2f604e5edf3d51d961913</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>u_project_id</sys_name>

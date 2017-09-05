@@ -20,7 +20,7 @@
         <sys_class_name>sys_transform_entry</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-26 21:32:47</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>62a31dfadb5e3e84e5edf3d51d96197e</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>[Script]</sys_name>
