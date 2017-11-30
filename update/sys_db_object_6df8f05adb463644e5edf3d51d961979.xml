@@ -17,8 +17,10 @@
         <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Vulnerability Entry" name="sn_vul_entry">8e3d71a0dbc17e80b7f6fdb61d961901</super_class>
+        <super_class display_value="Vulnerability Entry" name="sn_vul_entry">8e1c5d69dbe97680de04f06e0f9619f7</super_class>
+        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-12 20:09:22</sys_created_on>
         <sys_customer_update>false</sys_customer_update>

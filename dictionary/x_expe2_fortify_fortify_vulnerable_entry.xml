@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="sn_vul_entry" label="Fortify Vulnerable Entry" max_length="40" name="x_expe2_fortify_fortify_vulnerable_entry" type="collection">
+    <element extends="sn_vul_entry" label="Fortify Vulnerable Entry" max_length="40" name="x_expe2_fortify_fortify_vulnerable_entry" sizeclass="69536" type="collection">
         <element label="GUID" mandatory="true" max_length="100" name="guid" type="string"/>
         <element label="Issue Abstract" max_length="4000" name="issue_abstract" type="string"/>
         <element label="Issue Detail" max_length="10000" name="issue_detail" type="html"/>

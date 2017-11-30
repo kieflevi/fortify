@@ -4,107 +4,152 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b53ade66db4ab644e5edf3d51d9619c8</list_id>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
-            <sys_id>713ade66db4ab644e5edf3d51d9619c9</sys_id>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>135fc603dba7fac8f039fe8d0f96191c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>fortify_id</element>
-            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b53ade66db4ab644e5edf3d51d9619c8</list_id>
+            <element>active</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
-            <sys_id>f53ade66db4ab644e5edf3d51d9619c9</sys_id>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>975fc603dba7fac8f039fe8d0f96191c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>issue_instance_id</element>
-            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b53ade66db4ab644e5edf3d51d9619c8</list_id>
+            <element>activity_due</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
-            <sys_id>793ade66db4ab644e5edf3d51d9619c9</sys_id>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>1b5fc603dba7fac8f039fe8d0f96191c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>project</element>
-            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b53ade66db4ab644e5edf3d51d9619c8</list_id>
+            <element>additional_assignee_list</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
-            <sys_id>f93ade66db4ab644e5edf3d51d9619c9</sys_id>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>9b5fc603dba7fac8f039fe8d0f96191c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>project_version</element>
-            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b53ade66db4ab644e5edf3d51d9619c8</list_id>
+            <element>age</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
-            <sys_id>7d3ade66db4ab644e5edf3d51d9619c9</sys_id>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>1f5fc603dba7fac8f039fe8d0f96191c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>filename</element>
-            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b53ade66db4ab644e5edf3d51d9619c8</list_id>
+            <element>age_closed</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
-            <sys_id>fd3ade66db4ab644e5edf3d51d9619c9</sys_id>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>9f5fc603dba7fac8f039fe8d0f96191c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>fortify_vulnerability</element>
-            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b53ade66db4ab644e5edf3d51d9619c8</list_id>
+            <element>analysis</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
-            <sys_id>713ade66db4ab644e5edf3d51d9619ca</sys_id>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>135fc603dba7fac8f039fe8d0f96191d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>analyzer</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>935fc603dba7fac8f039fe8d0f96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>approval</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>175fc603dba7fac8f039fe8d0f96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>approval_history</element>
+            <list_id display_value="x_expe2_fortify_vulnerable_item" element="NULL" name="x_expe2_fortify_vulnerable_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">175fc603dba7fac8f039fe8d0f96191b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>kkaryadi_SN</sys_created_by>
+            <sys_created_on>2017-06-28 23:50:35</sys_created_on>
+            <sys_id>975fc603dba7fac8f039fe8d0f96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kkaryadi_SN</sys_updated_by>
+            <sys_updated_on>2017-06-28 23:50:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -118,10 +163,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>kkaryadi_SN</sys_created_by>
-            <sys_created_on>2017-04-13 21:46:51</sys_created_on>
+            <sys_created_on>2017-06-28 05:14:16</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>b53ade66db4ab644e5edf3d51d9619c8</sys_id>
+            <sys_id>83df8232dba736c8f039fe8d0f961973</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_expe2_fortify_vulnerable_item</sys_name>
             <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
@@ -130,7 +175,7 @@
             <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
             <sys_update_name>sys_ui_list_x_expe2_fortify_vulnerable_item_null</sys_update_name>
             <sys_updated_by>kkaryadi_SN</sys_updated_by>
-            <sys_updated_on>2017-04-13 21:46:51</sys_updated_on>
+            <sys_updated_on>2017-06-28 05:14:16</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

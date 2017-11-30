@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="sn_vul_vulnerable_item" max_length="40" name="x_expe2_fortify_vulnerable_item" type="collection">
+    <element audit="true" extends="sn_vul_vulnerable_item" label="Fortify Vulnerable Item" max_length="40" name="x_expe2_fortify_vulnerable_item" sizeclass="142202" type="collection">
         <element label="Analysis" max_length="100" name="analysis" type="string"/>
         <element label="Analyzer" max_length="40" name="analyzer" type="string"/>
         <element label="Audit Date" max_length="40" name="audit_date" type="glide_date_time"/>
@@ -10,6 +10,8 @@
         <element label="Filename" max_length="1000" name="filename" type="string"/>
         <element choice="3" default="UPDATED" label="Fortify Status" max_length="40" name="forfity_status" type="string">
             <choice>
+                <element label="NEW" sequence="0" value="NEW"/>
+                <element label="REINTRODUCED" sequence="0" value="REINTRODUCED"/>
                 <element label="UPDATED" sequence="10" value="UPDATED"/>
                 <element label="REMOVED" sequence="20" value="REMOVED"/>
             </choice>

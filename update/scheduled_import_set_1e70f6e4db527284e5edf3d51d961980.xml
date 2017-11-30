@@ -17,7 +17,7 @@
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
-        <run_period/>
+        <run_period>1970-01-01 00:05:00</run_period>
         <run_start>2017-04-13 23:09:02</run_start>
         <run_time>1970-01-01 09:25:00</run_time>
         <run_type>daily</run_type>
@@ -26,15 +26,15 @@
         <sys_created_on>2017-04-20 04:31:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1e70f6e4db527284e5edf3d51d961980</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Fortify Audited Issues</sys_name>
         <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
         <sys_update_name>scheduled_import_set_1e70f6e4db527284e5edf3d51d961980</sys_update_name>
-        <sys_updated_by>kkaryadi_SN</sys_updated_by>
-        <sys_updated_on>2017-04-20 04:32:08</sys_updated_on>
+        <sys_updated_by>mchernyavsky</sys_updated_by>
+        <sys_updated_on>2017-11-20 06:57:24</sys_updated_on>
         <u_application/>
         <upgrade_safe>false</upgrade_safe>
     </scheduled_import_set>

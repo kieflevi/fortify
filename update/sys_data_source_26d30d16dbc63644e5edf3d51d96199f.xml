@@ -21,11 +21,12 @@
         <jdbc_server>CHELSQLEISWI002.idxlab.expedmz.com</jdbc_server>
         <jdbc_user_name>sa</jdbc_user_name>
         <jdbcprobe_result_set_rows/>
+        <jpath_root_node/>
         <last_run_database_field/>
         <last_run_datetime/>
         <ldap_target/>
         <maximum_rows/>
-        <mid_server display_value="CHELUTLSND005-SQL">ce5c1752db7d320433dff12cbf9619b5</mid_server>
+        <mid_server display_value="">126316fcdb12be00c40e5f30cf96197e</mid_server>
         <name>Fortify - Vulnerability</name>
         <oracle_port>1521</oracle_port>
         <oracle_sid>orcl</oracle_sid>
@@ -48,7 +49,7 @@ SELECT [d].[id] AS [ID]&#13;
       ,[t].[recommendation] AS [Issue Recommendation]&#13;
       ,[t].[ruleAbstract] AS [Issue Abstract]&#13;
       ,[t].[tips] AS [Issue Tips]&#13;
-      ,[t].[refers] AS [Issue References]&#13;
+      ,[t].[refers] AS [Issue Reference]&#13;
   FROM [ssc].[dbo].[ruledescription] AS [d]&#13;
  INNER JOIN [ssc].[dbo].[rule_t] AS [t]&#13;
        ON [t].[id] = [d].[id]&#13;
@@ -59,15 +60,15 @@ SELECT [d].[id] AS [ID]&#13;
         <sys_created_on>2017-04-12 20:57:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>26d30d16dbc63644e5edf3d51d96199f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Fortify - Vulnerability</sys_name>
         <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
         <sys_update_name>sys_data_source_26d30d16dbc63644e5edf3d51d96199f</sys_update_name>
-        <sys_updated_by>kkaryadi_SN</sys_updated_by>
-        <sys_updated_on>2017-06-07 19:09:24</sys_updated_on>
+        <sys_updated_by>mchernyavsky</sys_updated_by>
+        <sys_updated_on>2017-11-17 07:42:42</sys_updated_on>
         <table_name/>
         <type>JDBC</type>
         <use_integrated_authentication>true</use_integrated_authentication>

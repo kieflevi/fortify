@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="sys_import_set_row" label="Fortify Import Projects" max_length="40" name="u_fortify_import_projects" type="collection">
+    <element extends="sys_import_set_row" label="Fortify - Projects" max_length="40" name="u_fortify_import_projects" type="collection">
         <element attributes="import_attribute_name=Created_By,edge_encryption_enabled=true" label="Created_By" max_length="2147483647" name="u_created_by" type="string"/>
-        <element attributes="import_attribute_name=Creation_Date,edge_encryption_enabled=true" label="Creation_Date" max_length="2147483647" name="u_creation_date" type="string"/>
+        <element attributes="import_attribute_name=Creation_Date,edge_encryption_enabled=true" label="Creation_Date" max_length="2147483647" name="u_creation_date" type="datetime"/>
         <element attributes="import_attribute_name=Project_Description,edge_encryption_enabled=true" label="Project_Description" max_length="2147483647" name="u_project_description" type="string"/>
-        <element attributes="import_attribute_name=Project_ID,edge_encryption_enabled=true" label="Project_ID" max_length="100" name="u_project_id" type="string"/>
+        <element attributes="import_attribute_name=Project_ID,edge_encryption_enabled=true" label="Project_ID" max_length="100" name="u_project_id" type="integer"/>
         <element attributes="import_attribute_name=Project_Name,edge_encryption_enabled=true" label="Project_Name" max_length="2147483647" name="u_project_name" type="string"/>
     </element>
 </database>

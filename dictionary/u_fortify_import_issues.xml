@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="sys_import_set_row" label="Fortify - Issues" max_length="40" name="u_fortify_import_issues" type="collection">
+    <element extends="sys_import_set_row" label="Fortify - Issues" max_length="40" name="u_fortify_import_issues" sizeclass="568778" type="collection">
         <element attributes="import_attribute_name=Analysis,edge_encryption_enabled=true" label="Analysis" max_length="2147483647" name="u_analysis" type="string"/>
         <element attributes="import_attribute_name=Analyzer,edge_encryption_enabled=true" label="Analyzer" max_length="2147483647" name="u_analyzer" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="auditTime" max_length="40" name="u_audittime" type="string"/>

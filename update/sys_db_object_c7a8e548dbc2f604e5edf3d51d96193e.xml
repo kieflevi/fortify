@@ -11,14 +11,16 @@
         <delete_access>false</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
-        <label>Fortify import Versions</label>
+        <label>Fortify Import Versions</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>u_fortify_import_versions</name>
         <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
         <super_class display_value="Import Set Row" name="sys_import_set_row">5b231f716910300062a9a91e8774e388</super_class>
+        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-05 23:45:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>

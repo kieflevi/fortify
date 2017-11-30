@@ -5,7 +5,7 @@
         <coalesce>false</coalesce>
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
-        <date_format>MM/dd/yyyy hh:mm</date_format>
+        <date_format>dd-MM-yyyy</date_format>
         <map display_value="Project Mapping">47f604b3dbb17604e5edf3d51d9619dc</map>
         <reference_value_field/>
         <source_field>u_creation_date</source_field>
@@ -36,15 +36,15 @@ function convertFortifyDateToGlideDateTime(dateString) {&#13;
         <sys_created_on>2017-04-04 22:23:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>486c0cb3dbf17604e5edf3d51d961998</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>u_creation_date</sys_name>
         <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
         <sys_update_name>sys_transform_entry_486c0cb3dbf17604e5edf3d51d961998</sys_update_name>
-        <sys_updated_by>kkaryadi_SN</sys_updated_by>
-        <sys_updated_on>2017-04-05 00:05:45</sys_updated_on>
+        <sys_updated_by>mchernyavsky</sys_updated_by>
+        <sys_updated_on>2017-09-30 06:08:52</sys_updated_on>
         <target_field>creation_date</target_field>
         <target_table>x_expe2_fortify_fortify_projects</target_table>
         <use_source_script>false</use_source_script>

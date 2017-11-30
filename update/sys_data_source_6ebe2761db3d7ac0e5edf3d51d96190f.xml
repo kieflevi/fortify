@@ -2,7 +2,7 @@
 <record_update table="sys_data_source">
     <sys_data_source action="INSERT_OR_UPDATE">
         <category/>
-        <connection_timeout>30</connection_timeout>
+        <connection_timeout>0</connection_timeout>
         <connection_url>jdbc:sqlserver://CHELSQLEISWI002.idxlab.expedmz.com;selectMethod=cursor;databaseName=;integratedSecurity=true</connection_url>
         <connection_url_parameters/>
         <csv_delimiter/>
@@ -14,24 +14,25 @@
         <format>com.microsoft.sqlserver.jdbc.SQLServerDriver</format>
         <glide_keystore>false</glide_keystore>
         <header_row>0</header_row>
-        <import_set_table_label>Fortify Projects</import_set_table_label>
+        <import_set_table_label>Fortify Import Projects</import_set_table_label>
         <import_set_table_name>u_fortify_import_projects</import_set_table_name>
         <instance_name/>
-        <jdbc_password>MEyi3jQvb+N7MaSa+EyjGA==</jdbc_password>
+        <jdbc_password>HgYCxkkuoplc5BK6zwQBBvWexqtJA3Gn</jdbc_password>
         <jdbc_server>CHELSQLEISWI002.idxlab.expedmz.com</jdbc_server>
-        <jdbc_user_name>sa</jdbc_user_name>
+        <jdbc_user_name>s-servicenow-hpssc</jdbc_user_name>
         <jdbcprobe_result_set_rows/>
+        <jpath_root_node/>
         <last_run_database_field/>
         <last_run_datetime/>
         <ldap_target/>
         <maximum_rows/>
-        <mid_server display_value="CHELUTLSND005-SQL">ce5c1752db7d320433dff12cbf9619b5</mid_server>
+        <mid_server display_value="">126316fcdb12be00c40e5f30cf96197e</mid_server>
         <name>Fortify - Projects</name>
         <oracle_port>1521</oracle_port>
         <oracle_sid>orcl</oracle_sid>
         <properties/>
         <query>Specific SQL</query>
-        <query_timeout>600</query_timeout>
+        <query_timeout>0</query_timeout>
         <scp_authentication>Username and Password</scp_authentication>
         <scp_password/>
         <scp_port/>
@@ -41,7 +42,7 @@
         <sql_statement>SELECT [id] AS [Project ID]&#13;
       ,[name] AS [Project Name]&#13;
       ,ISNULL([description], '') AS [Project Description]&#13;
-      ,[creationDate] AS [Creation Date]&#13;
+      ,CONVERT(nvarchar,[creationDate],105) AS [Creation Date]&#13;
       ,[createdBy] AS [Created By]&#13;
   FROM [ssc].[dbo].[project]&#13;
  WHERE [id] NOT IN (15, 41, 46)</sql_statement>
@@ -51,15 +52,15 @@
         <sys_created_on>2017-03-29 15:07:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ebe2761db3d7ac0e5edf3d51d96190f</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Fortify - Projects</sys_name>
         <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
         <sys_update_name>sys_data_source_6ebe2761db3d7ac0e5edf3d51d96190f</sys_update_name>
-        <sys_updated_by>kkaryadi_SN</sys_updated_by>
-        <sys_updated_on>2017-04-20 20:49:14</sys_updated_on>
+        <sys_updated_by>mchernyavsky</sys_updated_by>
+        <sys_updated_on>2017-09-30 06:10:09</sys_updated_on>
         <table_name/>
         <type>JDBC</type>
         <use_integrated_authentication>true</use_integrated_authentication>

@@ -48,7 +48,7 @@
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-06 20:51:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>148a8a98dbce3a04e5edf3d51d96193f</sys_id>
+        <sys_id>9e57a43adb277a4896d7790aaf961924</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Analyzer</sys_name>
         <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
@@ -56,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
         <sys_update_name>sys_dictionary_u_fortify_import_issues_u_analyzer</sys_update_name>
-        <sys_updated_by>kkaryadi_SN</sys_updated_by>
-        <sys_updated_on>2017-04-06 20:51:52</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-06-27 21:38:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_fulfillment_partner/>

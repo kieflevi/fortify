@@ -21,11 +21,12 @@
         <jdbc_server>CHELSQLEISWI002.idxlab.expedmz.com</jdbc_server>
         <jdbc_user_name>sa</jdbc_user_name>
         <jdbcprobe_result_set_rows/>
+        <jpath_root_node/>
         <last_run_database_field>auditTime</last_run_database_field>
         <last_run_datetime/>
         <ldap_target/>
         <maximum_rows/>
-        <mid_server display_value="CHELUTLSND002-DEV_MID_SERVER">0ea3da8f08a0910062a9c8e43182674e</mid_server>
+        <mid_server display_value="">126316fcdb12be00c40e5f30cf96197e</mid_server>
         <name>Fortify - Audited Issues</name>
         <oracle_port>1521</oracle_port>
         <oracle_sid>orcl</oracle_sid>
@@ -39,21 +40,27 @@
         <scp_user_name/>
         <sheet_number>0</sheet_number>
         <sql_statement>/*&#13;
-** Get a list of AUDITED Issues over the last 30 days&#13;
+** Get a list of Critical or High Issues that have been AUDITED over the last 30 days&#13;
 **&#13;
-** The "Analysis" GUID is 87f2364f-dcd4-49e6-861d-f8d3f351686b&#13;
-**   (SELECT TOP 1000 * FROM attr)&#13;
+** Notes:&#13;
+**   The "Analysis" GUID is 87f2364f-dcd4-49e6-861d-f8d3f351686b&#13;
+**     (SELECT TOP 1000 * FROM attr)&#13;
 **&#13;
-** The "OWASP Top 10 2013" GUID is 1A2B4C7E-93B0-4502-878A-9BE40D2A25C4&#13;
-**   (SELECT TOP 1000 * FROM catpackexternallist)&#13;
+**   The "OWASP Top 10 2013" GUID is 1A2B4C7E-93B0-4502-878A-9BE40D2A25C4&#13;
+**     (SELECT TOP 1000 * FROM catpackexternallist)&#13;
 **&#13;
-** Do NOT include these Project IDs:&#13;
-**    15 = test&#13;
-**    41 = Open Source&#13;
-**    46 = 3rd Party&#13;
+**   Do NOT include these Project IDs:&#13;
+**      15 = test&#13;
+**      35 = HCOM-OSS&#13;
+**      41 = Open Source&#13;
+**      46 = 3rd Party&#13;
 */&#13;
 &#13;
--- FIRST, create a temporary table of issues and OWASP Top 10 2013 value that were AUDITED over the last 30 days&#13;
+/*&#13;
+** Get the OWASP Top 10 2013 information of audited issues over the last 30 days&#13;
+** (this is strictly to filter out non-OWASP issues in step 4)&#13;
+*/&#13;
+-- 1. Create a temporary table of issues that have been AUDITED over the last 30 days&#13;
 SELECT DISTINCT [i].[id] AS [issue_id]&#13;
       ,[ssc].[dbo].[getExternalCategories]([i].[mappedCategory], '1A2B4C7E-93B0-4502-878A-9BE40D2A25C4') AS [owasp2013]&#13;
   INTO [#owasp]&#13;
@@ -65,15 +72,20 @@ SELECT DISTINCT [i].[id] AS [issue_id]&#13;
   LEFT JOIN [ssc].[dbo].[audithistoryview] AS [ahv]&#13;
          ON [i].[id] = [ahv].[issue_id]&#13;
  WHERE [i].[engineType] = 'SCA'&#13;
-   AND [p].[id] NOT IN (15, 41, 46)&#13;
+   AND [p].[id] NOT IN (15, 35, 41, 46)&#13;
    AND [pv].[active] = 'Y'&#13;
+   AND [i].[friority] IN ('Critical', 'High')&#13;
    AND [i].[suppressed] = 'N'&#13;
    AND [i].[scanStatus] &lt;&gt; 'REMOVED'&#13;
    AND (DATEADD(SECOND, [ahv].[auditTime] / 1000, '1970-01-01') &gt;= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE() - 29), 0)&#13;
         AND DATEADD(SECOND, [ahv].[auditTime] / 1000, '1970-01-01') &lt; DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE() + 1), 0))&#13;
  ORDER BY [i].[id]&#13;
 &#13;
--- SECOND, create a temporary table of the last audit on an issue over the last 30 days&#13;
+/*&#13;
+** Get the audit information of audited issues over the last 30 days&#13;
+** (this is strictly to get analysis and timestamp values for step 4)&#13;
+*/&#13;
+-- 2. Create a temporary table of the last audit on an AUDITED issue over the last 30 days&#13;
 SELECT [issue_id] AS [issue_id]&#13;
       ,MAX([seqNumber]) AS [seqNumber]&#13;
   INTO [#lastAudits]&#13;
@@ -84,7 +96,7 @@ SELECT [issue_id] AS [issue_id]&#13;
  GROUP BY [issue_id]&#13;
  ORDER BY [issue_id]&#13;
 &#13;
--- THIRD, create a temporary table of the audit information for the last audit on an issue over the last 30 days&#13;
+-- 3. Create a temporary table of the audit information for the last audit on an AUDITED issue over the last 30 days&#13;
 SELECT [ahv].[issue_id] AS [issue_id]&#13;
       ,ISNULL([ahv].[newValue], 'Not Set') AS [newValue]&#13;
       ,[ahv].[auditTime] AS [auditTime]&#13;
@@ -95,7 +107,7 @@ SELECT [ahv].[issue_id] AS [issue_id]&#13;
             AND [ahv].[seqNumber] = [la].[seqNumber]&#13;
  ORDER BY [ahv].[issue_id]&#13;
 &#13;
--- FOURTH, retrieve the issues that are OWASP Top 10 2013 related&#13;
+-- 4. Retrieve the issues that are OWASP Top 10 2013 related&#13;
 SELECT [i].[id] as [ID]&#13;
       ,ISNULL([ha].[newValue], 'Not Set') AS [Analysis]&#13;
       ,DATEADD(SECOND, [ha].[auditTime] / 1000, '1970-01-01') AS [auditTime]&#13;
@@ -109,7 +121,7 @@ SELECT [i].[id] as [ID]&#13;
  WHERE [o].[owasp2013] IS NOT NULL&#13;
  ORDER BY [i].[id]&#13;
 &#13;
--- FIFTH, clean up temporary tables&#13;
+-- 5. Clean up temporary tables&#13;
 DROP TABLE [#owasp]&#13;
 DROP TABLE [#lastAudits]&#13;
 DROP TABLE [#historicalAudits]</sql_statement>
@@ -117,17 +129,17 @@ DROP TABLE [#historicalAudits]</sql_statement>
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>kkaryadi_SN</sys_created_by>
         <sys_created_on>2017-04-20 00:19:01</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>5996bda8db1e3284e5edf3d51d961911</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Fortify - Audited Issues</sys_name>
         <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
         <sys_update_name>sys_data_source_5996bda8db1e3284e5edf3d51d961911</sys_update_name>
-        <sys_updated_by>kkaryadi_SN</sys_updated_by>
-        <sys_updated_on>2017-09-05 16:46:15</sys_updated_on>
+        <sys_updated_by>mchernyavsky</sys_updated_by>
+        <sys_updated_on>2017-10-04 13:22:19</sys_updated_on>
         <table_name/>
         <type>JDBC</type>
         <use_integrated_authentication>true</use_integrated_authentication>

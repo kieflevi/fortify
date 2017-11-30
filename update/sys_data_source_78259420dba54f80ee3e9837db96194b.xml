@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>30</connection_timeout>
+        <connection_url>jdbc:sqlserver://CHELSQLEISWI002.idxlab.expedmz.com;selectMethod=cursor;databaseName=;integratedSecurity=true</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name/>
+        <database_port/>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>com.microsoft.sqlserver.jdbc.SQLServerDriver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Fortify Issues</import_set_table_label>
+        <import_set_table_name>u_fortify_import_issues</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>MEyi3jQvb+N7MaSa+EyjGA==</jdbc_password>
+        <jdbc_server>CHELSQLEISWI002.idxlab.expedmz.com</jdbc_server>
+        <jdbc_user_name>sa</jdbc_user_name>
+        <jdbcprobe_result_set_rows/>
+        <jpath_root_node/>
+        <last_run_database_field>foundDate</last_run_database_field>
+        <last_run_datetime/>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="">126316fcdb12be00c40e5f30cf96197e</mid_server>
+        <name>Fortify - Removed Issues - Ititial</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>Specific SQL</query>
+        <query_timeout>600</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement>/*&#13;
+** Get a list of Critical or High Issues that were REMOVED in 2017&#13;
+**&#13;
+** !! IMPORTANT: Use this script only ONCE to seed the table  !!&#13;
+**&#13;
+** Notes:&#13;
+**   The "Analysis" GUID is 87f2364f-dcd4-49e6-861d-f8d3f351686b&#13;
+**     (SELECT TOP 1000 * FROM attr)&#13;
+**&#13;
+**   The "OWASP Top 10 2013" GUID is 1A2B4C7E-93B0-4502-878A-9BE40D2A25C4&#13;
+**     (SELECT TOP 1000 * FROM catpackexternallist)&#13;
+**&#13;
+**   Do NOT include these Project IDs:&#13;
+**      15 = test&#13;
+**      35 = HCOM-OSS&#13;
+**      41 = Open Source&#13;
+**      46 = 3rd Party&#13;
+*/&#13;
+&#13;
+/*&#13;
+** Get the OWASP Top 10 2013 information of removed issues in 2017&#13;
+** (this is strictly to filter out non-OWASP issues in step 4)&#13;
+*/&#13;
+-- 1. Create a temporary table of issues, and associated OWASP Top 10 2013 value, that were REMOVED in 2017&#13;
+SELECT DISTINCT [i].[id] AS [issue_id]&#13;
+      ,[p].[id] AS [project_id]&#13;
+      ,[pv].[id] AS [projectVersion_id]&#13;
+      ,[ssc].[dbo].[getExternalCategories]([i].[mappedCategory], '1A2B4C7E-93B0-4502-878A-9BE40D2A25C4') AS [owasp2013]&#13;
+  INTO [#owasp]&#13;
+  FROM [ssc].[dbo].[issue] AS [i]&#13;
+ INNER JOIN [ssc].[dbo].[projectversion] AS [pv]&#13;
+         ON [i].[projectVersion_id] = [pv].[id]&#13;
+ INNER JOIN [ssc].[dbo].[project] AS [p]&#13;
+         ON [pv].[project_id] = [p].[id]&#13;
+ WHERE [i].[engineType] = 'SCA'&#13;
+   AND [p].[id] NOT IN (15, 35, 41, 46)&#13;
+   AND [pv].[active] = 'Y'&#13;
+   AND [i].[friority] IN ('Critical', 'High')&#13;
+   AND [i].[suppressed] = 'N'&#13;
+   AND [i].[scanStatus] = 'REMOVED'&#13;
+   AND DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') &gt;= CAST('2017-01-01' AS DATE)&#13;
+ ORDER BY [i].[id]&#13;
+&#13;
+/*&#13;
+** Get the audit information of audited issues in 2017&#13;
+** (this is strictly to get analysis and timestamp values for step 4)&#13;
+*/&#13;
+-- 2. Create a temporary table of the last audit on an issue&#13;
+SELECT [issue_id] AS [issue_id]&#13;
+      ,MAX([seqNumber]) AS [seqNumber]&#13;
+  INTO [#lastAudits]&#13;
+  FROM [ssc].[dbo].[audithistoryview]&#13;
+ WHERE [attrGuid] = '87f2364f-dcd4-49e6-861d-f8d3f351686b'&#13;
+ GROUP BY [issue_id]&#13;
+ ORDER BY [issue_id]&#13;
+&#13;
+-- 3. Create a temporary table of the audit information for the last audit on an issue&#13;
+SELECT [ahv].[issue_id] AS [issue_id]&#13;
+      ,ISNULL([ahv].[newValue], 'Not Set') AS [newValue]&#13;
+      ,[ahv].[auditTime] AS [auditTime]&#13;
+  INTO [#historicalAudits]&#13;
+  FROM [ssc].[dbo].[audithistoryview] AS [ahv]&#13;
+ INNER JOIN [#lastAudits] AS [la]&#13;
+         ON [ahv].[issue_id] = [la].[issue_id]&#13;
+            AND [ahv].[seqNumber] = [la].[seqNumber]&#13;
+ ORDER BY [ahv].[issue_id]&#13;
+&#13;
+-- 4. Retrieve the REMOVED issues that are OWASP Top 10 2013 related&#13;
+SELECT [i].[id] AS [ID]&#13;
+      ,[i].[issueInstanceId] AS [Issue Instance ID]&#13;
+      ,[i].[friority] AS [Priority]&#13;
+      ,[o].[project_id] AS [Project ID]&#13;
+      ,[o].[projectVersion_id] AS [Project Version ID]&#13;
+      ,[i].[fileName] AS [Filename]&#13;
+      ,[i].[lineNumber] AS [Line #]&#13;
+      ,[i].[kingdom] AS [Kingdom]&#13;
+      ,[i].[category] AS [Category]&#13;
+      ,FORMAT([i].[impact], 'N1') AS [Impact]&#13;
+      ,FORMAT(ROUND([i].[likelihood], 1), 'N1') AS [Likelihood]&#13;
+      ,ISNULL([ha].[newValue], 'Not Set') AS [Analysis]&#13;
+      ,DATEADD(SECOND, [i].[foundDate] / 1000, '1970-01-01') AS [foundDate]&#13;
+      ,DATEADD(SECOND, [i].[removedDate] / 1000, '1970-01-01') AS [removedDate]&#13;
+      ,DATEADD(SECOND, [ha].[auditTime] / 1000, '1970-01-01') AS [auditTime]&#13;
+      ,FORMAT(ROUND([i].[severity], 1), 'N1') AS [Severity]&#13;
+      ,FORMAT(ROUND([i].[confidence], 1), 'N1') AS [Confidence]&#13;
+      ,[i].[ruleGuid] AS [descGUID]&#13;
+      ,[i].[engineType] AS [Engine Type]&#13;
+      ,[i].[analyzer] AS [Analyzer]&#13;
+      ,[i].[hidden] AS [Hidden]&#13;
+      ,[i].[suppressed] AS [Suppressed]&#13;
+      ,[i].[scanStatus] AS [Status]&#13;
+  FROM [ssc].[dbo].[issue] AS [i]&#13;
+  LEFT JOIN [#historicalAudits] AS [ha]&#13;
+         ON [i].[id] = [ha].[issue_id]&#13;
+ INNER JOIN [#owasp] AS [o]&#13;
+         ON [i].[id] = [o].[issue_id]&#13;
+ WHERE [o].[owasp2013] IS NOT NULL&#13;
+ ORDER BY [i].[id]&#13;
+&#13;
+-- 5. Clean up temporary tables&#13;
+DROP TABLE [#owasp]&#13;
+DROP TABLE [#lastAudits]&#13;
+DROP TABLE [#historicalAudits]</sql_statement>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>mchernyavsky</sys_created_by>
+        <sys_created_on>2017-09-28 06:37:21</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>78259420dba54f80ee3e9837db96194b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Fortify - Removed Issues - Ititial</sys_name>
+        <sys_package display_value="Fortify" source="x_expe2_fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fortify">cd8e2721db3d7ac0e5edf3d51d961902</sys_scope>
+        <sys_update_name>sys_data_source_78259420dba54f80ee3e9837db96194b</sys_update_name>
+        <sys_updated_by>mchernyavsky</sys_updated_by>
+        <sys_updated_on>2017-11-10 10:16:51</sys_updated_on>
+        <table_name/>
+        <type>JDBC</type>
+        <use_integrated_authentication>true</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>
